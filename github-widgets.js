@@ -11,6 +11,7 @@
       '<style type="text/css">'
       +'.github-box{font-family:helvetica,arial,sans-serif;font-size:13px;line-height:18px;background:#fafafa;border:1px solid #ddd;color:#666;border-radius:3px}'
       +'.github-box a{color:#4183c4;border:0;text-decoration:none}'
+      +'.github-box a:hover{text-decoration:underline}'
       +'.github-box .github-box-title{position:relative;border-bottom:1px solid #ddd;border-radius:3px 3px 0 0;background:#fcfcfc;background:-moz-linear-gradient(#fcfcfc,#ebebeb);background:-webkit-linear-gradient(#fcfcfc,#ebebeb);}'
       +'.github-box .github-box-title h3 {font-family:helvetica,arial,sans-serif;font-weight:normal;font-size:16px;color:gray;margin:0;padding:0 0 0 30px;background:url('+box_title_png+') 7px center no-repeat}'
       +'.github-box .github-box-title h3 .repo{font-weight:bold}'
