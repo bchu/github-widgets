@@ -1,4 +1,6 @@
-# GitHub jQuery Repo Widget
+# GitHub Widgets
+
+A fork of JoelSutherland's (Github-jQuery-Repo-Widget)[https://github.com/JoelSutherland/GitHub-jQuery-Repo-Widget] and dcodeIO's (modified widget)[https://github.com/dcodeIO/dcodeio.github.com/blob/master/assets/js/jquery.githubRepoWidget.min.js].
 
 Drop this script on your page and it will build you a beautiful widget that displays the status of your GitHub repo.
 
@@ -10,10 +12,10 @@ Drop this script on your page and it will build you a beautiful widget that disp
 
 Everwhere you want a widget to be placed, add the following markup:
 
-	<div class="github-widget" data-repo="JoelSutherland/GitHub-jQuery-Repo-Widget"></div>
+	<div class="github-widget" data-repo="bchu/github-widgets"></div>
 
 Then include the javascript file somewhere after you've include jQuery:
 
-	<script type="text/javascript" src="jquery.githubRepoWidget.min.js"></script>
+	<script type="text/javascript" src="github-widgets.min.js"></script>
 
 That's it! All of the styling is included and image assets are pulled from GitHub.

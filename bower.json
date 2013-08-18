@@ -1,0 +1,10 @@
+{
+  "name": "github-widgets",
+  "version": "0.0.1",
+  "main": "github-widgets.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}

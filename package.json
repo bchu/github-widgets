@@ -1,0 +1,25 @@
+{
+  "name": "github-widgets",
+  "version": "0.0.1",
+  "description": "Github widgets",
+  "main": "github-widgets.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bchu/github-widgets.git"
+  },
+  "keywords": [
+    "github",
+    "widget",
+    "badge"
+  ],
+  "author": "Brian Chu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bchu/github-widgets/issues"
+  },
+  "devDependencies": {
+    "matchdep": "~0.1.2",
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.2"
+  }
+}
