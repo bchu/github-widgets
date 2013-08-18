@@ -88,19 +88,33 @@
         $widget.find('.description span').text(repo.description);
         $widget.find('.link').append($('<a />').attr('href', repo.homepage).text(repo.homepage));
         $widget.find('.updated').html('Latest commit to the <strong>master</strong> branch on ' + pushed_at);
-        if (typeof sessionStorage != 'undefined') {
-          sessionStorage.setItem(url, JSON.stringify(repo));
+        if (typeof localStorage != 'undefined') {
+          repo._cachedAt = (new Date()).getTime(); //Unix epoch (ms since 1970)
+          localStorage.setItem(url, JSON.stringify(repo));
         }
       };
-      if (typeof sessionStorage != 'undefined' && sessionStorage.getItem(url)) {
-        callback({data: JSON.parse(sessionStorage.getItem(url))});
-      } else {
+
+      var cachedData = localStorage.getItem(url);
+      var elapsedMinutes;
+      if (typeof localStorage != 'undefined' && cachedData) {
+        // check for stale cache (20 minutes)
+        var cachedAtUnix = cachedData._cachedAt; // Unix epoch
+        var elapsed = (new Date()).getTime() - cachedAtUnix;
+        elapsedMinutes = elapsed / 1000 / 60; //ms -> s -> min
+      }
+      // fresh cache
+      if (elapsedMinutes && elapsedMinutes < 20) {
+        callback({data: JSON.parse(cachedData)});
+      }
+      // no cache or stale cache
+      else {
         $.ajax({
           url: url,
           dataType: 'jsonp',
           success: callback
         });
       }
+
     })('https://api.github.com/repos/'+repo);
 
     $(this).removeClass("github-widget"); // only once
