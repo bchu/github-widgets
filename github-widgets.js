@@ -77,6 +77,9 @@
       var callback = function(results) {
         var repo = results.data, date, pushed_at = 'unknown';
         if (repo.message && (/Rate Limit/i).test(repo.message)) {
+          if (cachedData) { //closure
+            callback({data: JSON.parse(cachedData)}); // try again, ignoring freshness of cache
+          }
           return; // This may happen if there are lots of widgets and caching does not trigger enough
         }
         if (repo.pushed_at) {
