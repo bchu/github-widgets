@@ -6,7 +6,9 @@ Drop this script on your page and it will build you a beautiful widget that disp
 
 ## What does it look like?
 
-![Widget Image](http://files.www.newmediacampaigns.com/blog/github-widget.png)
+![Widget Image](https://raw.githubusercontent.com/bchu/github-widgets/master/screenshot.png)
+
+See several examples here: [http://www.brianchu.com/projects/](http://www.brianchu.com/projects/)
 
 ## How do I use it?
 
