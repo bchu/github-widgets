@@ -1,6 +1,6 @@
 # GitHub Widgets
 
-A fork of JoelSutherland's [Github-jQuery-Repo-Widget](https://github.com/JoelSutherland/GitHub-jQuery-Repo-Widget) and dcodeIO's [modified widget](https://github.com/dcodeIO/dcodeio.github.com/blob/master/assets/js/jquery.githubRepoWidget.min.js).
+A fork of JoelSutherland's [Github-jQuery-Repo-Widget](https://github.com/JoelSutherland/GitHub-jQuery-Repo-Widget) and some code from [dcodeIO](https://github.com/dcodeIO/) (repo no longer exists).
 
 Drop this script on your page and it will build you a beautiful widget that displays the status of your GitHub repo. Requires jQuery.
 
